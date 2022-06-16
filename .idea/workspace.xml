@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dbef6be1-d980-4e47-93de-9ecadbcd778d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vue-admin/public/test.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/assets/img/test.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/FontEdit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/Fontadd.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ReportList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/ReportView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/src/components/fontList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/api/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/api/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/ConfigureList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/ConfigureList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/EnvList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/EnvList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/InterfaceList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/InterfaceList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/ProjectList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/ProjectList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/Tags.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/Tags.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/TestcaseAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/TestcaseAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/TestcaseEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/TestcaseEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/TestcaseList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/TestcaseList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/TestsuiteAdd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/TestsuiteAdd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/TestsuiteEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/TestsuiteEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/components/TestsuiteList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/components/TestsuiteList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="26GTdWAr6n3yacRkG6CNVDIgkom" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="D:\webstore\WebStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\managerSystem\vue-admin\src\components" />
+      <recent name="D:\managerSystem\vue-admin\src\components\common" />
+      <recent name="D:\managerSystem\vue-admin\public" />
+      <recent name="D:\managerSystem\vue-admin\src\assets\img" />
+      <recent name="D:\managerSystem\vue-admin\src\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\managerSystem\vue-admin\src\components" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dbef6be1-d980-4e47-93de-9ecadbcd778d" name="Default Changelist" comment="" />
+      <created>1647049012292</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647049012292</updated>
+      <workItem from="1647049014055" duration="1934000" />
+      <workItem from="1647135578273" duration="1961000" />
+      <workItem from="1647137882913" duration="3583000" />
+      <workItem from="1647218648659" duration="3326000" />
+      <workItem from="1647224182629" duration="54000" />
+      <workItem from="1647258993277" duration="5267000" />
+      <workItem from="1647307105404" duration="1878000" />
+      <workItem from="1647392063624" duration="2898000" />
+      <workItem from="1647434693824" duration="584000" />
+      <workItem from="1647501412757" duration="5000" />
+      <workItem from="1647565630165" duration="4100000" />
+      <workItem from="1647593588881" duration="2544000" />
+      <workItem from="1647597237659" duration="1182000" />
+      <workItem from="1647693946933" duration="1234000" />
+      <workItem from="1647695702054" duration="906000" />
+      <workItem from="1647697029989" duration="229000" />
+      <workItem from="1647697698644" duration="315000" />
+      <workItem from="1647740867721" duration="616000" />
+      <workItem from="1647747027958" duration="5770000" />
+      <workItem from="1647781418363" duration="1854000" />
+      <workItem from="1647824653931" duration="31000" />
+      <workItem from="1647996184177" duration="4833000" />
+      <workItem from="1648039384655" duration="788000" />
+      <workItem from="1648104349471" duration="3000" />
+      <workItem from="1648112208313" duration="295000" />
+      <workItem from="1648124061798" duration="2090000" />
+      <workItem from="1648169222923" duration="3811000" />
+      <workItem from="1648173495955" duration="468000" />
+      <workItem from="1648265309799" duration="3235000" />
+      <workItem from="1648345542509" duration="9353000" />
+      <workItem from="1648429267978" duration="706000" />
+      <workItem from="1648451027489" duration="598000" />
+      <workItem from="1648471823911" duration="4335000" />
+      <workItem from="1648476374325" duration="17000" />
+      <workItem from="1648514702999" duration="3207000" />
+      <workItem from="1648554023173" duration="1176000" />
+      <workItem from="1648601926694" duration="2296000" />
+      <workItem from="1648724754562" duration="4308000" />
+      <workItem from="1648729912818" duration="747000" />
+      <workItem from="1648733201133" duration="24000" />
+      <workItem from="1648882892469" duration="10287000" />
+      <workItem from="1649163039019" duration="1787000" />
+      <workItem from="1649206143345" duration="1210000" />
+      <workItem from="1649228364186" duration="731000" />
+      <workItem from="1649248389189" duration="2847000" />
+      <workItem from="1649302445817" duration="594000" />
+      <workItem from="1649336526675" duration="2689000" />
+      <workItem from="1649381264152" duration="12000" />
+      <workItem from="1649506725580" duration="5936000" />
+      <workItem from="1649550376036" duration="6790000" />
+      <workItem from="1649637610801" duration="3990000" />
+      <workItem from="1649761082063" duration="632000" />
+      <workItem from="1650115524564" duration="150000" />
+      <workItem from="1650115788374" duration="1755000" />
+      <workItem from="1650158331822" duration="7621000" />
+      <workItem from="1650242658827" duration="6771000" />
+      <workItem from="1650327974824" duration="2125000" />
+      <workItem from="1650338517620" duration="596000" />
+      <workItem from="1650367030429" duration="4182000" />
+      <workItem from="1650444483062" duration="3732000" />
+      <workItem from="1650501397109" duration="9817000" />
+      <workItem from="1650587397900" duration="5309000" />
+      <workItem from="1650606869794" duration="8279000" />
+      <workItem from="1650676070176" duration="1861000" />
+      <workItem from="1650762116904" duration="2859000" />
+      <workItem from="1650769101091" duration="2192000" />
+      <workItem from="1650789058471" duration="1270000" />
+      <workItem from="1650803143039" duration="3428000" />
+      <workItem from="1650846746802" duration="3018000" />
+      <workItem from="1650878454291" duration="5966000" />
+      <workItem from="1650933712104" duration="4193000" />
+      <workItem from="1650961970715" duration="6000" />
+      <workItem from="1650973762620" duration="2747000" />
+      <workItem from="1651020374243" duration="3874000" />
+      <workItem from="1651044660072" duration="436000" />
+      <workItem from="1651048888221" duration="5303000" />
+      <workItem from="1651108681425" duration="1614000" />
+      <workItem from="1651133724816" duration="5300000" />
+      <workItem from="1651192524816" duration="7554000" />
+      <workItem from="1651284460065" duration="5258000" />
+      <workItem from="1651371566093" duration="1897000" />
+      <workItem from="1651478575411" duration="3956000" />
+      <workItem from="1651540624763" duration="8505000" />
+      <workItem from="1651713800685" duration="2048000" />
+      <workItem from="1651721753106" duration="4000" />
+      <workItem from="1651747557721" duration="3132000" />
+      <workItem from="1651797173242" duration="4885000" />
+      <workItem from="1651836557952" duration="1572000" />
+      <workItem from="1651843065385" duration="3095000" />
+      <workItem from="1651883068184" duration="6506000" />
+      <workItem from="1651912061235" duration="6000" />
+      <workItem from="1651975719475" duration="9688000" />
+      <workItem from="1652056858585" duration="16363000" />
+      <workItem from="1652142008050" duration="20319000" />
+      <workItem from="1652185179630" duration="2565000" />
+      <workItem from="1652229271752" duration="8792000" />
+      <workItem from="1652271988421" duration="1924000" />
+      <workItem from="1652318208383" duration="9258000" />
+      <workItem from="1652341740687" duration="8561000" />
+      <workItem from="1652401890706" duration="10873000" />
+      <workItem from="1652490658611" duration="9876000" />
+      <workItem from="1652577237881" duration="6549000" />
+      <workItem from="1652618360150" duration="2534000" />
+      <workItem from="1652661138558" duration="5894000" />
+      <workItem from="1652746942862" duration="5467000" />
+      <workItem from="1652788841917" duration="6261000" />
+      <workItem from="1652834230508" duration="13783000" />
+      <workItem from="1652923930930" duration="10382000" />
+      <workItem from="1653006862633" duration="4631000" />
+      <workItem from="1653094433648" duration="3401000" />
+      <workItem from="1653181759587" duration="5910000" />
+      <workItem from="1653264983129" duration="1485000" />
+      <workItem from="1653289030874" duration="1000" />
+      <workItem from="1653300924043" duration="597000" />
+      <workItem from="1653307806769" duration="4410000" />
+      <workItem from="1653351635804" duration="12000000" />
+      <workItem from="1653438378230" duration="12270000" />
+      <workItem from="1653480695397" duration="2762000" />
+      <workItem from="1653527829221" duration="5282000" />
+      <workItem from="1653569920014" duration="4177000" />
+      <workItem from="1653611141353" duration="12796000" />
+      <workItem from="1653700519615" duration="6735000" />
+      <workItem from="1653783898092" duration="857000" />
+      <workItem from="1653827639505" duration="3000000" />
+      <workItem from="1653871569935" duration="16070000" />
+      <workItem from="1653913214612" duration="4898000" />
+      <workItem from="1653957158305" duration="22588000" />
+      <workItem from="1654044002733" duration="13065000" />
+      <workItem from="1654259967140" duration="4270000" />
+      <workItem from="1654302027124" duration="14754000" />
+      <workItem from="1654475764296" duration="9307000" />
+      <workItem from="1654561792331" duration="12372000" />
+      <workItem from="1654648227744" duration="11664000" />
+      <workItem from="1654737289125" duration="6579000" />
+      <workItem from="1654843874961" duration="2421000" />
+      <workItem from="1654930383996" duration="2287000" />
+      <workItem from="1655038048527" duration="635000" />
+      <workItem from="1655044275102" duration="34000" />
+      <workItem from="1655044344145" duration="1635000" />
+    </task>
+    <task id="LOCAL-00001" summary="创建router理由。实现登录页面，创建请求拦截器">
+      <created>1647753511223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647753511223</updated>
+    </task>
+    <task id="LOCAL-00002" summary="用例编辑">
+      <created>1652620333292</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652620333292</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="创建router理由。实现登录页面，创建请求拦截器" />
+    <MESSAGE value="用例编辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="用例编辑" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="370" y="85" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1649560529894">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="370" y="85" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1649560529894" />
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1652620330972">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1652620330972" />
+    <state x="631" y="141" key="FileChooserDialogImpl" timestamp="1647824684181">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="631" y="141" key="FileChooserDialogImpl/0.0.1920.1020/-2880.0.2880.1560@0.0.1920.1020" timestamp="1647824684181" />
+    <state x="141" y="0" key="SettingsEditor" timestamp="1647049401462">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="141" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1647049401462" />
+    <state x="-2051" y="378" key="Vcs.Push.Dialog.v2" timestamp="1651134110698">
+      <screen x="-2880" y="0" width="2880" height="1560" />
+    </state>
+    <state x="-2051" y="378" key="Vcs.Push.Dialog.v2/0.0.1920.1020/-2880.0.2880.1560@-2880.0.2880.1560" timestamp="1651134110698" />
+    <state x="477" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1652319514346">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="-2162" y="155" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1020/-2880.0.2880.1560@-2880.0.2880.1560" timestamp="1650764409928" />
+    <state x="477" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1020/2880.0.2880.1560@0.0.1920.1020" timestamp="1652319514345" />
+    <state x="0" y="0" width="1909" height="980" key="dock-window-1" timestamp="1652088472125">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="0" y="0" width="1909" height="980" key="dock-window-1/0.0.1920.1020/2880.0.2880.1560@0.0.1920.1020" timestamp="1652088472125" />
+    <state x="616" y="230" width="1009" height="1469" key="run.anything.popup" timestamp="1653980697406">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="-1956" y="352" key="run.anything.popup/0.0.1920.1020/-2880.0.2880.1560@-2880.0.2880.1560" timestamp="1651221960600" />
+    <state x="616" y="230" width="1009" height="1469" key="run.anything.popup/0.0.1920.1020/-2880.0.2880.1560@0.0.1920.1020" timestamp="1653980697406" />
+    <state x="455" y="2" width="1009" height="1017" key="search.everywhere.popup" timestamp="1652950044651">
+      <screen x="0" y="0" width="1920" height="1020" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1647752829397" />
+    <state x="455" y="2" width="1009" height="1017" key="search.everywhere.popup/0.0.1920.1020/-2880.0.2880.1560@0.0.1920.1020" timestamp="1652950044651" />
+    <state x="455" y="2" width="1009" height="1017" key="search.everywhere.popup/0.0.1920.1020/2880.0.2880.1560@0.0.1920.1020" timestamp="1652341747498" />
+  </component>
+</project>
