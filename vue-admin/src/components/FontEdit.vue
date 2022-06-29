@@ -28,7 +28,7 @@
         </div>
     </el-tab-pane>
 
-    <el-tab-pane label="构建前步骤">
+    <el-tab-pane label="构建镜像">
       <div class="table">
 
         <el-row>

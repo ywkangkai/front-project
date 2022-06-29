@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let host = 'http://127.0.0.1:8000/'
+let host = 'http://127.0.0.1:8000'
 
 
 //项目管理
@@ -328,6 +328,14 @@ export const getGit = (params) =>{
 
 export const buildBefore = (params) =>{
     return axios.post(`${host}/repository/compile/`, params)
+}
+
+export const buildAfter = (params) =>{
+    return axios.post(`${host}/repository/after/`, params)
+}
+
+export const getHarbor = (params) =>{
+    return axios.post(`${host}/harbor/list/`, params)
 }
 
 

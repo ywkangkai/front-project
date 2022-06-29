@@ -64,7 +64,7 @@
                 },
               rules: {
                     projectname: [
-                        { validator: validateName, trigger: 'blur',required: true,  message: '请输入项目名称',}
+                        { validator: validateName, trigger: 'blur',required: true }
                     ],
                     leader: [
                         { required: true, message: '请输入项目负责人', trigger: 'blur' }
@@ -104,7 +104,6 @@
                         });
                     }
                     else {
-                      console.log('yyyyyyyyyyyyyyyyyy')
                         this.$message.error('参数有误');
                         return false;
                     }

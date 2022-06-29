@@ -40,6 +40,7 @@
           <template slot-scope="scope">
             <el-button v-if="normal" type="text" icon="el-icon-refresh-right" @click="handleBuild(scope.$index, scope.row)">构建</el-button>
             <el-button v-if="build" type="text" @click="handleBuild(scope.$index, scope.row)"><i class="el-icon-loading"></i>构建</el-button>
+            <el-button type="text" icon="el-icon-share" @click="deploy(scope.row)">部署</el-button>
             <el-button type="text" icon="el-icon-edit" @click="linkTo(scope.row.id)">编辑</el-button>
             <el-button type="text" icon="el-icon-view" @click="views">详情</el-button>
 <!--            <el-button type="text" icon="el-icon-close" @click="clears">清除构建</el-button>-->
@@ -52,7 +53,6 @@
               <el-steps  align-center>
                 <el-step :status="scope.row.status.git_status1" :title="scope.row.status.git" icon="el-icon-loading" :description="scope.row.status.git_description"></el-step>
                 <el-step :status="scope.row.status.build_before_status2" :title="scope.row.status.build_before" icon="el-icon-loading" :description="scope.row.status.build_before_description"></el-step>
-                <el-step :status="scope.row.status.structure_status3" :title="scope.row.status.structure" icon="el-icon-loading" :description="scope.row.status.structure_description"></el-step>
                 <el-step :status="scope.row.status.build_after_status4" :title="scope.row.status.build_after" icon="el-icon-loading" :description="scope.row.status.build_after_description"></el-step>
               </el-steps>
               <span slot="footer" class="dialog-footer">
@@ -78,11 +78,44 @@
                 <el-button type="primary" @click="deleteRow">确 定</el-button>
             </span>
     </el-dialog>
+
+    <!-- 部署项目 -->
+    <el-dialog title="部署项目" :visible.sync="runVisible" width="30%" center>
+      <el-form ref="form" :model="form" label-width="120px">
+        <el-form-item label="选择镜像">
+
+          <el-select v-model="harbor_name" clearable placeholder="请选择">
+            <el-option
+                v-for="item in harbor_id_names"
+                :key="item.id"
+                :label="item.name"
+                :value="item.name">
+            </el-option>
+          </el-select>
+
+        </el-form-item>
+
+      </el-form>
+      <span slot="footer" class="dialog-footer">
+                <el-button>取 消</el-button>
+                <el-button type="primary" @click="openFullScreen1" v-loading.fullscreen.lock="fullscreenLoading">运行</el-button>
+            </span>
+    </el-dialog>
   </div>
 </template>
 
 <script>
-import {getrepository, deleteRepository, getGit, searchRepository, deleteAllRepository, buildBefore} from '../api/api';
+import {
+  getrepository,
+  deleteRepository,
+  getGit,
+  searchRepository,
+  deleteAllRepository,
+  buildBefore,
+  run_by_project,
+  getHarbor,
+  buildAfter
+} from '../api/api';
 export default {
   name: 'basetable',
   data() {
@@ -101,6 +134,8 @@ export default {
       delVisible: false,    // 删除项目弹框是否显示标识
       runVisible: false,    // 运行项目弹框是否显示标识
       form: {},
+      harbor_name: '',
+      harbor_id_names: [],
 
       idx: -1,   // 在tableData数组中的索引值
       id: -1,    // 在数据库中的真实索引值
@@ -113,44 +148,34 @@ export default {
       is_build: false,
       dialogVisible:false,
       active: 1,
-
-      // git: '未开始',//拉取工程
-      // build_before: '未开始',//构建前步骤
-      // structure:'未开始',//编译
-      // build_after:'未开始',//构建后步骤
-      //
-      // git_status1: 'wait',
-      // build_before_status2: 'wait',
-      // structure_status3: 'wait',
-      // build_after_status4: 'wait',
-      //
-      // git_description: '拉取代码',
-      // build_before_description: '构建前步骤',
-      // structure_description: '代码编译',
-      // build_after_description: '构建后步骤',
-
-      git: '',//拉取工程
-      build_before: '',//构建前步骤
-      structure:'',//编译
-      build_after:'',//构建后步骤
-
-      git_status1: '',
-      build_before_status2: '',
-      structure_status3: '',
-      build_after_status4: '',
-
-      git_description: '',
-      build_before_description: '',
-      structure_description: '',
-      build_after_description: '',
-
-
     }
   },
   created() {
-    this.getData();     // 获取项目数据
+    this.getData();
+
   },
   methods: {
+    //强制等待
+    wait(){
+      var timeOut = new Date().getTime() + parseInt(time, 10);
+      while (new Date().getTime() <= timeOut){
+
+      }
+    },
+    async deploy(row){
+      this.runVisible = true
+      let response = await getHarbor({id: row.id})
+      this.harbor_id_names = response.data
+    },
+    async openFullScreen1() {
+      console.log(this.harbor_name)
+      if (this.harbor_name === ''){
+        this.$message.error('请选择镜像版本')
+      }
+      else {
+
+      }
+    },
     // 分页导航
     handleCurrentChange(val) {
       this.cur_page = val;
@@ -207,7 +232,11 @@ export default {
         row.status.git = '进行中'
         row.status.git_description = '正在拉取代码'
         row.status.build_before_status2 = 'wait'
-        row.status.build_before_description = '未开始'
+        row.status.build_before_description = '构建镜像'
+        row.status.build_before = '未开始'
+        row.status.build_after_status4 = 'wait'
+        row.status.build_after_description = '构建后步骤'
+        row.status.build_after = '未开始'
       }
       let response = await getGit({id:this.id})
       let re = new RegExp('文件夹')
@@ -245,33 +274,78 @@ export default {
         row.status.git = '已完成'
         row.status.git_description = response.data.message
         this.normal = true
+        this.build = false
+        return
+      }
+      else if (response.data.message === '项目拉取失败'){
+        row.status.git_status1 = 'error'
+        row.status.git = '已完成'
+        row.status.git_description = response.data.message
+        this.normal = true
+        this.build = false
         return
       }
 
 
       let compile_response = await buildBefore({id:this.id})
-
-      if (compile_response.data.message === '构建前步骤执行完成'){
+      if (compile_response.data.message === '镜像构建成功'){
         row.status.build_before_status2 = 'success'
         row.status.build_before = '已完成'
-        row.status.build_before_description = '构建前步骤执行完成'
-        row.status.build_after = '进行中'
+        row.status.build_before_description = '镜像构建成功'
         row.status.build_after_status4 = 'finish'
-        row.status.build_after_description = '执行构建后操作'
+        row.status.build_after_description = '正在执行构建后步骤'
+        row.status.build_after = '进行中'
       }
       else if (compile_response.data.message === '服务器链接失败'){
         row.status.build_before_status2 = 'error'
         row.status.build_before = '已完成'
         row.status.build_before_description = '服务器链接失败'
+        this.normal = true
+        this.build = false
+        return
       }
-      else if (compile_response.data.message === '构建前步骤失败'){
+      else if (compile_response.data.message === '镜像构建失败'){
         row.status.build_before_status2 = 'error'
         row.status.build_before = '已完成'
-        row.status.build_before_description = '构建前步骤执行失败'
+        row.status.build_before_description = '镜像构建失败'
+        this.normal = true
+        this.build = false
+        return
+      }
+      else if (response.data.message === '缺少dockerfile文件'){
+        row.status.git_status1 = 'error'
+        row.status.git = '已完成'
+        row.status.git_description = response.data.message
+        this.normal = true
+        this.build = false
+        return
       }
 
-
-
+      let build_after_response = await buildAfter({id:this.id})
+      if (build_after_response.data.message === '构建后步骤执行成功'){
+        row.status.build_after = '已完成'
+        row.status.build_after_status4 = 'success'
+        row.status.build_after_description = build_after_response.data.message
+        this.normal = true
+        this.build = false
+        return
+      }
+      else if (build_after_response.data.message === '服务器链接失败'){
+        row.status.build_after = '已完成'
+        row.status.build_after_status4 = 'error'
+        row.status.build_after_description = '服务器链接失败'
+        this.normal = true
+        this.build = false
+        return
+      }
+      else if (build_after_response.data.message === '构建后步骤执行失败'){
+        row.status.build_after = '已完成'
+        row.status.build_after_status4 = 'error'
+        row.status.build_after_description = '构建后步骤执行失败'
+        this.normal = true
+        this.build = false
+        return
+      }
 
 
 
@@ -304,6 +378,10 @@ export default {
     },
     // 确定删除
     deleteRow(){
+      if (this.build === true){
+        this.$message.warning('当前有构建任务无法删除')
+        return
+      }
       deleteRepository(this.id)
           .then(response => {
             // 项目删除成功
